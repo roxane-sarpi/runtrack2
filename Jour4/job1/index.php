@@ -18,6 +18,9 @@
         <label>Âge : </label>
         <input type="text" name="age"><br><br>
 
+         <label>Ville : </label>
+        <input type="text" name="ville"><br><br>
+
         <input type="submit" value="Envoyer">
     </form>
 
@@ -32,7 +35,7 @@
             $nbArguments = $nbArguments + 1; 
         }
 
-        echo "Le nombre d’argument GET envoyé est : " . $nbArguments;
+        echo "Le nombre d'argument GET envoyé est : " . $nbArguments;
     }
     ?>
 </body>
