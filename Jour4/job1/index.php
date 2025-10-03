@@ -21,5 +21,19 @@
         <input type="submit" value="Envoyer">
     </form>
 
+    <?php
+    
+    
+    if (!empty($_GET)) {
+        $nbArguments = 0;
+
+        
+        foreach ($_GET as $cle => $valeur) {
+            $nbArguments = $nbArguments + 1; 
+        }
+
+        echo "Le nombre d’argument GET envoyé est : " . $nbArguments;
+    }
+    ?>
 </body>
 </html>
