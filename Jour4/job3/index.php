@@ -1,12 +1,8 @@
 <?php
-$nb_post = 0;
-
-foreach ($posts as $post) {
-    if ($post['published'] === true) {
-        $nb_post++;
-    }
-}
+$nbPost = count($_POST);
+echo "Le nombre d'argument POST envoyé est : " . $nbPost;
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,7 +15,7 @@ foreach ($posts as $post) {
  <form method="post">
     <label>Prénom : <input type="text" name="prenom"></label><br>
     <label>Pseudo : <input type="text" name="pseudo"></label><br>
-    <label>Date de naissance : <input type="text" name="date_naissance"></label><br>
+    <label>Pays : <input type="text" name="pays"></label><br>
     <input type="submit" name="envoyer" value="Envoyer">
   </form>
 </body>
