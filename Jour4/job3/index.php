@@ -1,5 +1,8 @@
 <?php
 $nbPost = count($_POST);
+if (isset($_POST['envoyer'])) {
+    $nbPost--;
+}
 echo "Le nombre d'argument POST envoyé est : " . $nbPost;
 ?>
 
