@@ -6,9 +6,9 @@ $password = isset($_POST['password']) ? $_POST['password'] : '';
 
 if ($_POST) {
     if ($username === 'John' && $password === 'Rambo') {
-        echo "<p style='color: green; font-weight: bold;'>C'est pas ma guerre</p>";
+        echo "<p>C'est pas ma guerre</p>";
     } else {
-        echo "<p style='color: red; font-weight: bold;'>Votre pire cauchemar</p>";
+        echo "<p>Votre pire cauchemar</p>";
     }
 }
 ?>
